@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- стили -->
+    <link rel="shortcut icon" href="static/img/heart.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <title>Special For Svetik</title>
+</head>
+<style>
+    body{
+    cursor: url('static/img/cat.png'), pointer;
+    }
+    .btn_no{
+    cursor: url('static/img/sadcat.png'), pointer;
+    }
+    .btn_yes{
+    cursor: url('static/img/funcat.png'), pointer;
+    }
+
+</style>
+<body>
+<!-- игровое поле -->
+<div class="board" style="padding: 10%">
+     <a href="static/img/1.jpg" target="_blank"><img class="love_img1" src="static/img/1.jpg" style="position: absolute; margin-left: 0px; margin-top: -100px;
+    transform: rotate(340deg);
+    scale: 1; border-radius: 20px;"></a>
+    <a href="static/img/3.jpg" target="_blank"><img class="love_img3" src="static/img/3.jpg" style="position: absolute; margin-left: -150px;
+    transform: rotate(340deg); margin-top: 350px;
+    scale: 1; border-radius: 20px;"></a>
+    <div class="card">
+        <img class="valentine_img" src="static/img/valentine.jpg" style="margin-left: auto; margin-right: auto; border-radius: 20px;" width="80%" height="70%">
+    <button style="margin-left: -50px; width: 22%; height: 13%; text-align: center;" id="no" class="btn_no">Не</button>
+        <a href="/iloveyou"> <button style="margin-left: 50px; width: 22%; height: 13%; text-align: center;" id="yes" class="btn_yes">Да</button></a>
+        </div>
+    <a href="static/img/2.jpg" target="_blank"><img class="love_img2" src="static/img/2.jpg" style="position: absolute; margin-left: 1200px;
+    transform: rotate(340deg);
+    scale: 1; border-radius: 20px; margin-top: -700px;"></a>
+    <a href="static/img/4.jpg" target="_blank"><img class="love_img1" src="static/img/4.jpg"
+                                                    style="position: absolute; margin-left: 1400px;
+    transform: rotate(340deg);
+    scale: 1; border-radius: 20px; margin-top: -400px;"></a>
+    <a href="static/img/5.jpg" target="_blank"><img class="love_img4" src="static/img/5.jpg" style="position: absolute; margin-left: 1150px;
+    transform: rotate(340deg);
+    scale: 1; border-radius: 20px; margin-top: -160px;"></a>
+</div>
+<!-- скрипт -->
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

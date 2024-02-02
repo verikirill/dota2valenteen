@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+    cursor: url('./cat.png'), pointer;
+}
+
+.board {
+margin: auto;
+    width: 100vw;
+    height: 100vh;
+    background-image:
+    linear-gradient(82deg, rgba(255,229,180, 0.52) 18%, rgba(196,70,114, 0.73) 51%, rgba(255,2,181, 0.83) 100%),
+    url('sakura.jpg');
+    background-size: cover;
+}
+
+
+.btn_no {
+font-family: "Casual";
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+   position: absolute;
+   left: 30%;
+   top: 80%;
+   transition: 0.09s;
+   width: 150px;
+   height: 80px;
+   font-size: 15px;
+   border-radius: 10px;
+   border: none;
+   outline: none;
+   text-transform: uppercase;
+   font-weight: bold;
+   box-shadow: rgb(0, 0, 0, 0.35) 0 5px 15px;
+   background-image: linear-gradient(to right, #f857a6 0%, #ff5858  51%, #f857a6  100%);
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;
+   box-shadow: 0 0 10px #eee;
+   }
+
+.btn_yes:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+            scale: 1.05 !important;
+            filter: brightness(90%);
+  }
+ .btn_no:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+            scale: 1.05 !important;
+            filter: brightness(90%);
+  }
+@font-face {
+font-family: "Casual";
+src: url("casual.ttf");
+}
+.btn_yes {
+  font-family: "Casual";
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+   position: absolute;
+   left: 50%;
+   top: 80%;
+   transition: 0.09s;
+   width: 150px;
+   height: 80px;
+   font-size: 15px;
+   border-radius: 10px;
+   border: none;
+   outline: none;
+   text-transform: uppercase;
+   font-weight: bold;
+   box-shadow: rgb(0, 0, 0, 0.35) 0 5px 15px;
+    background-image: linear-gradient(to right, #f857a6 0%, #ff5858  51%, #f857a6  100%);
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;
+   box-shadow: 0 0 10px #eee;
+}
+.card {
+  margin: auto;
+  margin-top: -10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 35px;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  height: 70vh;
+  width: 40vw;
+  backdrop-filter: blur(1px);
+}
+
+.love_img1 {
+    animation: mover1 2s infinite  alternate;
+}
+.love_img1:hover {
+    filter: brightness(90%);
+    scale: 1.01 !important;
+ }
+
+.love_img2:hover {
+    filter: brightness(90%);
+    scale: 1.01 !important;
+ }
+.love_img3:hover {
+    filter: brightness(90%);
+    scale: 1.01 !important;
+ }
+ .love_img4:hover {
+    filter: brightness(90%);
+    scale: 1.01 !important;
+ }
+@keyframes mover1 {
+    0% { transform: translateY(0) rotate(340deg);}
+    100% { transform: translateY(-20px) rotate(338deg);}
+}
+
+
+.love_img2 {
+    animation: mover2 3s infinite  alternate;
+}
+@keyframes mover2 {
+    0% { transform: translateY(0) rotate(17deg);}
+    100% { transform: translateY(-20px) rotate(20deg);}
+}
+.love_img3 {
+    animation: mover3 3s infinite  alternate;
+}
+@keyframes mover3 {
+    0% { transform: translateY(10px) rotate(40deg);}
+    100% { transform: translateY(-30px) rotate(38deg);}
+}
+.love_img4 {
+    animation: mover4 4s infinite  alternate;
+}
+@keyframes mover4 {
+    0% { transform: translateY(0px) rotate(17deg);}
+    100% { transform: translateY(-20px) rotate(13deg);}
+}
+
+.valentine_img{
+animation: mover5 10s infinite  alternate;
+}
+@keyframes mover5 {
+    0% { transform: rotate(-5deg);}
+    100% { transform: rotate(5deg);}
+}
+
+.content {
+  padding: 7rem 0; }
+
+.gif1 {
+cursor: url('./cat.png'), pointer;
+animation: mover7 3s infinite  alternate;
+border-radius: 30px;
+   position: absolute;
+   transform-origin: center;
+}
+.gif2 {
+cursor: url('./cat.png'), pointer;
+animation: mover6 3s infinite  alternate;
+border-radius: 30px;
+   position: absolute;
+   transform-origin: center;
+}
+
+.card1 {
+cursor: url('./cat.png'), pointer;
+  position: relative;
+  width: 500px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card1 img {
+cursor: url('./cat.png'), pointer;
+  width: 98%;
+  height: 40%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card1 .text {
+cursor: url('./cat.png'), pointer;
+font-family: "Casual";
+font-size: 19.5px;
+  text-align: center;
+  padding: 15px;
+}
+
+
+.second_page {
+    cursor: url('./cat.png'), pointer;
+  background: linear-gradient(to right, #FFBBA4, #F0BC95, #E1AD86, #FFDAB3);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes mover6 {
+    0% { transform: translateY(0px) rotate(17deg);}
+    100% { transform: translateY(10px) rotate(13deg);}
+}
+
+@keyframes mover7 {
+    0% { transform: translateY(0px) rotate(17deg);}
+    100% { transform: translateY(-10px) rotate(13deg);}
+}
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
